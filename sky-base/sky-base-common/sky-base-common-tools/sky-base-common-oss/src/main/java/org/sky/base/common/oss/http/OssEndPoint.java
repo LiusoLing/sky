@@ -121,7 +121,7 @@ public class OssEndPoint {
     }
 
     /**
-     * 获取指定对象
+     * 获取对象外链
      *
      * @param bucketName bucket名称
      * @param objectName 对象名称
@@ -148,7 +148,7 @@ public class OssEndPoint {
      */
     @SneakyThrows
     @ResponseStatus(HttpStatus.ACCEPTED)
-    @DeleteMapping("/object/{bucketName}/{objectName}/")
+    @DeleteMapping("/object/{bucketName}/{objectName}")
     public void deleteObject(@PathVariable String bucketName, @PathVariable String objectName) {
         s3OssClient.removeObject(bucketName, objectName);
     }

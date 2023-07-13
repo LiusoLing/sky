@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.sky</groupId>
-        <artifactId>sky-bom</artifactId>
+        <artifactId>sky</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>sky-base</artifactId>
@@ -22,6 +22,7 @@
     </developers>
 
     <modules>
+        <module>sky-base-bom</module>
         <module>sky-base-common</module>
     </modules>
 
