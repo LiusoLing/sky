@@ -15,7 +15,7 @@ public interface DescEnum {
      *
      * @return {@link String}
      */
-    String getName();
+    String getValue();
 
     /**
      * 获取枚举描述

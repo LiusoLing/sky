@@ -1,5 +1,8 @@
 package org.sky.base.common.core.enums;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
 /**
  * <p>
  * 基本异常提示常量枚举<br/>
@@ -15,6 +18,8 @@ package org.sky.base.common.core.enums;
  * @author liusongling
  * @since 2023-07-07 14:35:13
  */
+@Getter
+@AllArgsConstructor
 public enum BizCode implements BaseEnum<BizCode> {
     /**
      * 1：系统提示：操作成功
@@ -70,29 +75,8 @@ public enum BizCode implements BaseEnum<BizCode> {
     NotGrant(10011, "系统提示","没有操作该功能的权限，请联系管理员");
 
     private final Integer code;
-    private final String name;
+    private final String value;
     private final String desc;
-
-    BizCode(Integer code, String name, String desc) {
-        this.code = code;
-        this.name = name;
-        this.desc = desc;
-    }
-
-    @Override
-    public String getCode() {
-        return code.toString();
-    }
-
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public String getDesc() {
-        return desc;
-    }
 
     public Integer getIntCode() {
         return code;
