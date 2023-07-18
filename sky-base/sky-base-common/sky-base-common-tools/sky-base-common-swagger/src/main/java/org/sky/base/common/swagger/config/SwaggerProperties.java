@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * <p>
- *
+ * swagger 属性
  * </p>
  *
  * @author liusongling
@@ -26,7 +26,7 @@ public class SwaggerProperties {
     /**
      * swagger会解析的包路径
      **/
-    private List<String> basePackage;
+    private String basePackage = "";
 
     /**
      * swagger会解析的url规则
@@ -67,9 +67,4 @@ public class SwaggerProperties {
      * 服务条款URL
      **/
     private String termsOfServiceUrl = "";
-
-    /**
-     * host信息
-     **/
-    private String host = "";
 }

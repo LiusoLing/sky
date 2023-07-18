@@ -7,7 +7,7 @@ import java.lang.annotation.*;
 
 /**
  * <p>
- *
+ * 决定开启swagger文档注解
  * </p>
  *
  * @author liusongling
@@ -18,5 +18,5 @@ import java.lang.annotation.*;
 @Documented
 @Inherited
 @Import({ SwaggerAutoConfiguration.class })
-public @interface EnableSkySwagger {
+public @interface EnableSwaggerDoc {
 }
