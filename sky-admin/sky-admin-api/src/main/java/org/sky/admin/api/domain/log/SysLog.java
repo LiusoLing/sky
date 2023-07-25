@@ -1,7 +1,6 @@
 package org.sky.admin.api.domain.log;
 
 
-import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import org.sky.admin.api.infrastructure.enums.log.LogCategory;
