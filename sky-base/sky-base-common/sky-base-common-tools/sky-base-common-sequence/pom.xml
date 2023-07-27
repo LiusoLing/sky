@@ -7,10 +7,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>sky-base-common-oss</artifactId>
+    <artifactId>sky-base-common-sequence</artifactId>
     <packaging>jar</packaging>
-    <name>sky-base-common-oss</name>
-    <description>sky 基础公共 OSS 工具包</description>
+    <name>sky-base-common-sequence</name>
+    <description>sky 基础公共 分布式发号器</description>
     <developers>
         <developer>
             <email>15879144378@163.com</email>
@@ -18,21 +18,16 @@
         </developer>
     </developers>
 
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
-        <!--Amazon S3工具包-->
+        <!--hutool工具包-->
         <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>aws-java-sdk-s3</artifactId>
-        </dependency>
-
-        <!--SpringBoot-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
         </dependency>
     </dependencies>
 </project>

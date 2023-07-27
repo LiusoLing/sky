@@ -23,6 +23,7 @@
         <module>sky-base-common-log</module>
         <module>sky-base-common-swagger</module>
         <module>sky-base-common-job</module>
+        <module>sky-base-common-sequence</module>
     </modules>
 
     <properties>
@@ -36,20 +37,14 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
-        <!--SpringBoot-->
+        <!--SpringBoot autoConfig-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
             <optional>true</optional>
         </dependency>
 
-        <!--SpringBoot-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <!--SpringBoot-->
+        <!--SpringBoot configuration processor-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
