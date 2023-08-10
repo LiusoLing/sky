@@ -2,6 +2,7 @@ package org.sky.base.common.sequence.sequence.impl;
 
 import cn.hutool.core.lang.Snowflake;
 import cn.hutool.core.util.IdUtil;
+import lombok.Data;
 import org.sky.base.common.sequence.exception.SequenceException;
 import org.sky.base.common.sequence.sequence.Sequence;
 
@@ -28,19 +29,20 @@ import org.sky.base.common.sequence.sequence.Sequence;
  * @author liusongling
  * @since 2023-07-27 09:52:52
  */
+@Data
 public class SnowflakeSequence implements Sequence {
     /**
      * 工作机器ID(0~31)
      */
-    private static long workerId = 0L;
+    private long workerId = 0L;
     /**
      * 数据中心ID(0~31)
      */
-    private static long datacenterId = 0L;
+    private long datacenterId = 0L;
     /**
      * 单例的Twitter的Snowflake 算法生成器对象
      */
-    private static Snowflake snowflake = IdUtil.getSnowflake(workerId, datacenterId);
+    private Snowflake snowflake = IdUtil.getSnowflake(workerId, datacenterId);
 
     @Override
     public long nextValue() throws SequenceException {
